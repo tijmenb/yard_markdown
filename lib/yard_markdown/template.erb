@@ -1,0 +1,40 @@
+<% public_classes_and_modules.each do |klass| %>
+## `<%= klass.name %>`
+
+<% klass.public_methods.each do |meth| %>
+### `<%= meth.name %>`
+
+<%= meth.description %>
+
+<% if meth.params.any? %>
+**Params**:
+<% meth.params.each do |tag| %>
+- `<%= tag.name %>` (`<%= tag.types.to_a.join(', ') %>`) — <%= tag.text %>
+  <% tag.options.each do |option| %>
+  - `<%= option.pair.name %>` (`<%= option.pair.type %>`) — <%= option.pair.text %><% end %>
+<% end %>
+<% end %>
+
+<% if meth.returns.any? %>
+**Returns**:
+<% meth.returns.each do |tag| %>
+- (`<%= tag.types.to_a.join(', ') %>`) — <%= tag.text %>
+<% end %>
+<% end %>
+
+<% if meth.examples.any? %>
+**Examples**:
+<% meth.examples.each do |tag| %>
+```ruby
+<%= tag.text %>
+```
+<% end %>
+<% end %>
+
+**See**:
+<% meth.sees.each do |tag| %>- <%= tag.name %><%= tag.text %>
+<% end %>- [Source on GitHub](<%= meth.github_url(website_base) %>)
+
+<% end %>
+---
+<% end %>

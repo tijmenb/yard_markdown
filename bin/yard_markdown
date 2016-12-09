@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'yard_markdown'
+
+path = __FILE__
+$LOAD_PATH.unshift(File.join(File.dirname(File.expand_path(path)), '..', 'lib'))
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = "Usage: yard_markdown [options]"
+
+  opts.on("-gREPO", "--github_repo=REPO", "The github repo") do |v|
+    options[:github_repo] = v
+  end
+end.parse!
+
+YardMarkdown::Generator.generate(options)
