@@ -58,4 +58,10 @@ RSpec.describe YardMarkdown do
       expect(@generated_file).to include('https://github.com/tijmenb/yard_markdown')
     end
   end
+
+  describe "@deprecated" do
+    it "shows the deprecation message" do
+      expect(@generated_file).to match("Don't use this anymore.")
+    end
+  end
 end

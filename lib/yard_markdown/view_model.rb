@@ -74,6 +74,11 @@ module YardMarkdown
       end
     end
 
+    def deprecation_message
+      messages = meth.tags(:deprecated).map(&:text)
+      messages.any? ? messages.join : nil
+    end
+
     # @private
     class Param < Struct.new(:param)
       def name

@@ -14,6 +14,11 @@ module YardMarkdown
     # @option opts [String] :to Recipient email
     # @option opts [String] :body ('') The email's body
     def send_email(opts = {}) end
+
+    # @deprecated Don't use this anymore.
+    def some_deprecated_method
+
+    end
   end
 
   module ExampleModule
