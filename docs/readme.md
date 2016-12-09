@@ -62,6 +62,13 @@ YardMarkdown::Generator.generate(
 **See**:
 - [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L16)
 
+### `#some_deprecated_method`
+
+⚠️ **Don't use this anymore.**
+
+**See**:
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L19)
+
 ---
 
 ## `module YardMarkdown::ExampleModule`
@@ -70,7 +77,7 @@ YardMarkdown::Generator.generate(
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L20)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L25)
 
 ---
 

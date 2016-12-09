@@ -6,6 +6,10 @@
 
 <%= meth.description %>
 
+<% if meth.deprecation_message %>
+⚠️ **<%= meth.deprecation_message %>**
+<% end %>
+
 <% if meth.params.any? %>
 **Params**:
 <% meth.params.each do |tag| %>
