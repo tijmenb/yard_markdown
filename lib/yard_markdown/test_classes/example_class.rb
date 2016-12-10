@@ -17,6 +17,10 @@ module YardMarkdown
     def some_instance_method(with_arg = {})
     end
 
+    # @raise [ArgumentError] if something is wrong
+    def something_that_raises
+    end
+
     # @param [Hash] opts the options to create a message with.
     # @option opts [String] :subject The subject
     # @option opts [String] :from ('nobody') From address

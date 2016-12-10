@@ -88,6 +88,10 @@ module YardMarkdown
       end
     end
 
+    def raises
+      meth.tags(:raise)
+    end
+
     def deprecation_message
       messages = meth.tags(:deprecated).map(&:text)
       messages.any? ? messages.join : nil
