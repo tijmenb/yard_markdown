@@ -48,7 +48,7 @@ Some description for the `initialize` method
 - (`Hash`) — your response
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L11)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L13)
 
 ### `#some_instance_method(with_arg = {})`
 
@@ -56,7 +56,7 @@ Some description for the `initialize` method
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L15)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L17)
 
 ### `#send_email(opts = {}) end`
 
@@ -70,14 +70,14 @@ Some description for the `initialize` method
   - `:body` (`String`) — '') The email's body
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L23)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L25)
 
 ### `#some_deprecated_method`
 
 ⚠️ **Don't use this method anymore.**
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L26)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L28)
 
 ---
 
@@ -87,7 +87,7 @@ Some description for the `initialize` method
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L32)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L34)
 
 ---
 

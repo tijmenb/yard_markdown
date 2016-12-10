@@ -77,6 +77,14 @@ RSpec.describe YardMarkdown do
     it "shows the deprecation message for classes" do
       expect(@generated_file).to match("Don't use this class anymore.")
     end
+
+    it "does not show the rubocop messages for methods" do
+      expect(@generated_file).to_not match("rubocop:disable Style/DisabledCopOnMethod")
+    end
+
+    it "does not show the rubocop messages for classes" do
+      expect(@generated_file).to_not match("rubocop:disable Style/DisabledCopOnClass")
+    end
   end
 
   describe "@note" do
