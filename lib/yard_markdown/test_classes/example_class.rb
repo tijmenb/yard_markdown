@@ -1,10 +1,12 @@
 module YardMarkdown
+  # @note Something really important for the class
   class ExampleClass
     # @param something [Hash] this is my param, it should be a hash
     # @return [Hash] your response
     def initialize(something)
     end
 
+    # @note Something really important for this method
     def some_instance_method(with_arg = {})
     end
 

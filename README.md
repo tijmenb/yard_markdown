@@ -27,8 +27,7 @@ Limitations:
 
 Tags still to be implemented:
 
-- `@deprecated`
-- `@note`
+- `@deprecated` for classes
 - `@raise`
 - `@yield`, `@yieldparam`, `@yieldreturn`
 

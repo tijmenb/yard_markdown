@@ -1,10 +1,18 @@
 <% public_classes_and_modules.each do |klass| %>
 ## `<%= klass.name %>`
 
+<% if klass.note_message %>
+**<%= klass.note_message %>**
+<% end %>
+
 <% klass.public_methods.each do |meth| %>
 ### `<%= meth.name %>`
 
 <%= meth.description %>
+
+<% if meth.note_message %>
+**<%= meth.note_message %>**
+<% end %>
 
 <% if meth.deprecation_message %>
 ⚠️ **<%= meth.deprecation_message %>**
