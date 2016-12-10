@@ -1,5 +1,6 @@
 module YardMarkdown
   # @note Something really important for the class
+  # @deprecated Don't use this class anymore.
   class ExampleClass
     # @param something [Hash] this is my param, it should be a hash
     # @return [Hash] your response
@@ -17,7 +18,7 @@ module YardMarkdown
     # @option opts [String] :body ('') The email's body
     def send_email(opts = {}) end
 
-    # @deprecated Don't use this anymore.
+    # @deprecated Don't use this method anymore.
     def some_deprecated_method
 
     end

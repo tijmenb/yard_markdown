@@ -5,6 +5,10 @@
 **<%= klass.note_message %>**
 <% end %>
 
+<% if klass.deprecation_message %>
+⚠️ **<%= klass.deprecation_message %>**
+<% end %>
+
 <% klass.public_methods.each do |meth| %>
 ### `<%= meth.name %>`
 
