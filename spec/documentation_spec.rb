@@ -60,8 +60,12 @@ RSpec.describe YardMarkdown do
   end
 
   describe "@deprecated" do
-    it "shows the deprecation message" do
-      expect(@generated_file).to match("Don't use this anymore.")
+    it "shows the deprecation message for methods" do
+      expect(@generated_file).to match("Don't use this method anymore.")
+    end
+
+    it "shows the deprecation message for classes" do
+      expect(@generated_file).to match("Don't use this class anymore.")
     end
   end
 

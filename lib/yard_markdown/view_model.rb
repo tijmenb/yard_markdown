@@ -47,6 +47,11 @@ module YardMarkdown
       end
     end
 
+    def deprecation_message
+      messages = klass.tags(:deprecated).map(&:text)
+      messages.any? ? messages.join : nil
+    end
+
     def note_message
       messages = klass.tags(:note).map(&:text)
       messages.any? ? messages.join : nil
