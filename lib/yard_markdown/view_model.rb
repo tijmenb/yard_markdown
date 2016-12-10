@@ -37,6 +37,10 @@ module YardMarkdown
       "#{klass.type} #{klass}"
     end
 
+    def description
+      klass.base_docstring.lines.reject { |line| line.start_with?('rubocop:') }.join
+    end
+
     def public_methods
       @public_methods ||= begin
         klass.meths(inherited: false, included: false).map do |method|
@@ -75,7 +79,7 @@ module YardMarkdown
     end
 
     def description
-      meth.base_docstring
+      meth.base_docstring.lines.reject { |line| line.start_with?('rubocop:') }.join
     end
 
     def params

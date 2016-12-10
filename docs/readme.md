@@ -28,11 +28,15 @@ YardMarkdown::Generator.generate(
 
 ## `class YardMarkdown::ExampleClass`
 
+A description for the ExampleClass
+
 **Something really important for the class**
 
 ⚠️ **Don't use this class anymore.**
 
 ### `#initialize(something)`
+
+Some description for the `initialize` method
 
 **Params**:
 
@@ -44,7 +48,7 @@ YardMarkdown::Generator.generate(
 - (`Hash`) — your response
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L7)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L13)
 
 ### `#some_instance_method(with_arg = {})`
 
@@ -52,7 +56,7 @@ YardMarkdown::Generator.generate(
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L11)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L17)
 
 ### `#send_email(opts = {}) end`
 
@@ -66,14 +70,14 @@ YardMarkdown::Generator.generate(
   - `:body` (`String`) — '') The email's body
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L19)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L25)
 
 ### `#some_deprecated_method`
 
 ⚠️ **Don't use this method anymore.**
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L22)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L28)
 
 ---
 
@@ -83,7 +87,7 @@ YardMarkdown::Generator.generate(
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L28)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L34)
 
 ---
 

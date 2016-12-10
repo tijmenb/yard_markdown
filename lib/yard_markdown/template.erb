@@ -1,6 +1,8 @@
 <% public_classes_and_modules.each do |klass| %>
 ## `<%= klass.name %>`
 
+<%= klass.description %>
+
 <% if klass.note_message %>
 **<%= klass.note_message %>**
 <% end %>

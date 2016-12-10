@@ -1,9 +1,15 @@
 module YardMarkdown
+  # A description for the ExampleClass
+  #
   # @note Something really important for the class
   # @deprecated Don't use this class anymore.
+  # rubocop:disable Style/DisabledCopOnClass
   class ExampleClass
+    # Some description for the `initialize` method
+    #
     # @param something [Hash] this is my param, it should be a hash
     # @return [Hash] your response
+    # rubocop:disable Style/DisabledCopOnMethod
     def initialize(something)
     end
 

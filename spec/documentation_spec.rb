@@ -33,6 +33,16 @@ RSpec.describe YardMarkdown do
     end
   end
 
+  describe "description" do
+    it "shows the class description" do
+      expect(@generated_file).to include('A description for the ExampleClass')
+    end
+
+    it "shows the method description" do
+      expect(@generated_file).to include('Some description for the `initialize` method')
+    end
+  end
+
   describe "parameters" do
     it "shows documents parameters" do
       expect(@generated_file).to include('`something` (`Hash`) — this is my param, it should be a hash')
@@ -66,6 +76,14 @@ RSpec.describe YardMarkdown do
 
     it "shows the deprecation message for classes" do
       expect(@generated_file).to match("Don't use this class anymore.")
+    end
+
+    it "does not show the rubocop messages for methods" do
+      expect(@generated_file).to_not match("rubocop:disable Style/DisabledCopOnMethod")
+    end
+
+    it "does not show the rubocop messages for classes" do
+      expect(@generated_file).to_not match("rubocop:disable Style/DisabledCopOnClass")
     end
   end
 
