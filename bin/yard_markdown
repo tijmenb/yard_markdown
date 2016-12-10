@@ -1,10 +1,11 @@
 #!/usr/bin/env ruby
 
 require 'optparse'
-require 'yard_markdown'
 
 path = __FILE__
 $LOAD_PATH.unshift(File.join(File.dirname(File.expand_path(path)), '..', 'lib'))
+
+require 'yard_markdown'
 
 options = {}
 OptionParser.new do |opts|
