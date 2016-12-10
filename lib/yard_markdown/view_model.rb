@@ -37,6 +37,10 @@ module YardMarkdown
       "#{klass.type} #{klass}"
     end
 
+    def description
+      klass.base_docstring
+    end
+
     def public_methods
       @public_methods ||= begin
         klass.meths(inherited: false, included: false).map do |method|

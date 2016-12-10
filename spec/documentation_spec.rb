@@ -33,6 +33,16 @@ RSpec.describe YardMarkdown do
     end
   end
 
+  describe "description" do
+    it "shows the class description" do
+      expect(@generated_file).to include('A description for the ExampleClass')
+    end
+
+    it "shows the method description" do
+      expect(@generated_file).to include('Some description for the `initialize` method')
+    end
+  end
+
   describe "parameters" do
     it "shows documents parameters" do
       expect(@generated_file).to include('`something` (`Hash`) — this is my param, it should be a hash')
