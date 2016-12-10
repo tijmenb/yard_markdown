@@ -27,7 +27,6 @@ Limitations:
 
 Tags still to be implemented:
 
-- `@raise`
 - `@yield`, `@yieldparam`, `@yieldreturn`
 
 No plans to implement:

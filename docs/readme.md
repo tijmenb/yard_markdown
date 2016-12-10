@@ -58,6 +58,16 @@ Some description for the `initialize` method
 **See**:
 - [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L17)
 
+### `#something_that_raises`
+
+
+**Raises**:
+
+- `ArgumentError` if something is wrong
+
+**See**:
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L21)
+
 ### `#send_email(opts = {}) end`
 
 **Params**:
@@ -69,15 +79,17 @@ Some description for the `initialize` method
   - `:to` (`String`) — Recipient email
   - `:body` (`String`) — '') The email's body
 
+
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L25)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L29)
 
 ### `#some_deprecated_method`
 
 ⚠️ **Don't use this method anymore.**
 
+
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L28)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L32)
 
 ---
 
@@ -87,7 +99,7 @@ Some description for the `initialize` method
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L34)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L38)
 
 ---
 

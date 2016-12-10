@@ -96,4 +96,10 @@ RSpec.describe YardMarkdown do
       expect(@generated_file).to match("Something really important for the class")
     end
   end
+
+  describe "@raise" do
+    it "shows the raised exception" do
+      expect(@generated_file).to match("`ArgumentError` if something is wrong")
+    end
+  end
 end
