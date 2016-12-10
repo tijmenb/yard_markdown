@@ -64,4 +64,14 @@ RSpec.describe YardMarkdown do
       expect(@generated_file).to match("Don't use this anymore.")
     end
   end
+
+  describe "@note" do
+    it "shows the emphasised message for methods" do
+      expect(@generated_file).to match("Something really important for this method")
+    end
+
+    it "shows the emphasised message for classes" do
+      expect(@generated_file).to match("Something really important for the class")
+    end
+  end
 end

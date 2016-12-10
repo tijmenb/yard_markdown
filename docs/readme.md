@@ -28,6 +28,8 @@ YardMarkdown::Generator.generate(
 
 ## `class YardMarkdown::ExampleClass`
 
+**Something really important for the class**
+
 ### `#initialize(something)`
 
 **Params**:
@@ -40,13 +42,15 @@ YardMarkdown::Generator.generate(
 - (`Hash`) — your response
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L5)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L6)
 
 ### `#some_instance_method(with_arg = {})`
 
+**Something really important for this method**
+
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L8)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L10)
 
 ### `#send_email(opts = {}) end`
 
@@ -60,14 +64,14 @@ YardMarkdown::Generator.generate(
   - `:body` (`String`) — '') The email's body
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L16)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L18)
 
 ### `#some_deprecated_method`
 
 ⚠️ **Don't use this anymore.**
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L19)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L21)
 
 ---
 
@@ -77,7 +81,7 @@ YardMarkdown::Generator.generate(
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L25)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L27)
 
 ---
 

@@ -46,6 +46,11 @@ module YardMarkdown
         end.compact
       end
     end
+
+    def note_message
+      messages = klass.tags(:note).map(&:text)
+      messages.any? ? messages.join : nil
+    end
   end
 
   # @private
@@ -76,6 +81,11 @@ module YardMarkdown
 
     def deprecation_message
       messages = meth.tags(:deprecated).map(&:text)
+      messages.any? ? messages.join : nil
+    end
+
+    def note_message
+      messages = meth.tags(:note).map(&:text)
       messages.any? ? messages.join : nil
     end
 
