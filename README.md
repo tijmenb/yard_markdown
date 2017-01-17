@@ -25,13 +25,11 @@ Limitations:
 
 - `@see` tags don't link internally. That may be hard to do in straight Markown.
 
-Tags still to be implemented:
+Most of the [YARD tags][yard-tags] have been implemented.
 
-- `@yield`, `@yieldparam`, `@yieldreturn`
+We have no plans to implement:
 
-No plans to implement:
-
-- `@overload`, `@since`, `@todo` and `@version`
+- `@overload`, `@since`, `@todo`, `@yieldparam`, `@yieldreturn` and `@version`
 - all the `@!` directives
 
 ## Installation
@@ -80,3 +78,6 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/tijmen
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+
+[yard-tags]: http://www.rubydoc.info/gems/yard/file/docs/Tags.md

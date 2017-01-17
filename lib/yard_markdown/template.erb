@@ -50,6 +50,13 @@
 <% end %>
 <% end %>
 
+<% if meth.yields.any? %>
+**Yields**:
+<% meth.yields.each do |tag| %>
+- (`<%= tag.types.to_a.join(', ') %>`) — <%= tag.text %>
+<% end %>
+<% end %>
+
 <% if meth.examples.any? %>
 **Examples**:
 <% meth.examples.each do |tag| %>

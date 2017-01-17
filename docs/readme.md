@@ -9,6 +9,7 @@
  - [`something_that_raises`](#something_that_raises)
  - [`send_email`](#send_emailopts---end)
  - [`some_deprecated_method`](#some_deprecated_method)
+ - [`method_that_yields`](#method_that_yields)
 
 - [`ExampleModule`](#module-yardmarkdownexamplemodule)
  - [`method_on_module`](#method_on_module)
@@ -63,6 +64,7 @@ Some description for the `initialize` method
 
 - (`Hash`) — your response
 
+
 **See**:
 - [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L13)
 
@@ -107,6 +109,16 @@ Some description for the `initialize` method
 **See**:
 - [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L32)
 
+### `#method_that_yields`
+
+
+**Yields**:
+
+- (`a, b, c`) — Gives 3 random numbers to the block
+
+**See**:
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L36)
+
 ---
 
 ## `module YardMarkdown::ExampleModule`
@@ -114,8 +126,9 @@ Some description for the `initialize` method
 ### `.method_on_module`
 
 
+
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L38)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L41)
 
 ---
 
