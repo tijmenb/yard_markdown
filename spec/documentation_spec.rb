@@ -112,4 +112,10 @@ RSpec.describe YardMarkdown do
       expect(@generated_file).to match("`ArgumentError` if something is wrong")
     end
   end
+
+  describe "@yield" do
+    it "shows what it yields" do
+      expect(@generated_file).to match("Gives 3 random numbers to the block")
+    end
+  end
 end

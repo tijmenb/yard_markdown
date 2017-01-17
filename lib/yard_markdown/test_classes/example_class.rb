@@ -30,7 +30,10 @@ module YardMarkdown
 
     # @deprecated Don't use this method anymore.
     def some_deprecated_method
+    end
 
+    # @yield [a, b, c] Gives 3 random numbers to the block
+    def method_that_yields
     end
   end
 
