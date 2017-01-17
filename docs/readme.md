@@ -1,3 +1,19 @@
+# tijmenb/yard_markdown
+
+- [`Generator`](#class-yardmarkdowngenerator)
+ - [`generate`](#generategithub_repo)
+
+- [`ExampleClass`](#class-yardmarkdownexampleclass)
+ - [`initialize`](#initializesomething)
+ - [`some_instance_method`](#some_instance_methodwith_arg--)
+ - [`something_that_raises`](#something_that_raises)
+ - [`send_email`](#send_emailopts---end)
+ - [`some_deprecated_method`](#some_deprecated_method)
+
+- [`ExampleModule`](#module-yardmarkdownexamplemodule)
+ - [`method_on_module`](#method_on_module)
+
+---
 
 ## `class YardMarkdown::Generator`
 
