@@ -37,6 +37,14 @@ module YardMarkdown
       "#{klass.type} #{klass}"
     end
 
+    def short_name
+      klass.name
+    end
+
+    def anchor
+      Strings.github_anchor(name)
+    end
+
     def description
       klass.base_docstring.lines.reject { |line| line.start_with?('rubocop:') }.join
     end
@@ -76,6 +84,14 @@ module YardMarkdown
       else
         '.' + meth.signature.gsub('self.', '').gsub('def ', '')
       end
+    end
+
+    def short_name
+      meth.name
+    end
+
+    def anchor
+      Strings.github_anchor(name)
     end
 
     def description

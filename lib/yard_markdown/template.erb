@@ -1,3 +1,13 @@
+# <%= github_repo %>
+
+<% public_classes_and_modules.each do |klass| %>
+- [`<%= klass.short_name %>`](#<%= klass.anchor %>)
+<% klass.public_methods.each do |meth| %> - [`<%= meth.short_name %>`](#<%= meth.anchor %>)
+<% end %>
+<% end %>
+
+---
+
 <% public_classes_and_modules.each do |klass| %>
 ## `<%= klass.name %>`
 

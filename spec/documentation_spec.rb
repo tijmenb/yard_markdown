@@ -9,6 +9,16 @@ RSpec.describe YardMarkdown do
     @generated_file = File.read("docs/readme.md")
   end
 
+  describe "table of contents" do
+    it "has entries for classes" do
+      expect(@generated_file).to include('- [`Generator`](#class-yardmarkdowngenerator)')
+    end
+
+    it "has entries for methods" do
+      expect(@generated_file).to include(' - [`generate`](#generategithub_repo)')
+    end
+  end
+
   describe "classes and modules" do
     it "uses the class name as a header" do
       expect(@generated_file).to include('## `class YardMarkdown::ExampleClass`')
