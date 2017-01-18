@@ -49,6 +49,10 @@ module YardMarkdown
       klass.base_docstring.lines.reject { |line| line.start_with?('rubocop:') }.join
     end
 
+    def sees
+      klass.tags(:see)
+    end
+
     def public_methods
       @public_methods ||= begin
         klass.meths(inherited: false, included: false).map do |method|

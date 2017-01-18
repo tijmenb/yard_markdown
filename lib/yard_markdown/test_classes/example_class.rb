@@ -3,6 +3,7 @@ module YardMarkdown
   #
   # @note Something really important for the class
   # @deprecated Don't use this class anymore.
+  # @see https://www.example.org/class-see
   # rubocop:disable Style/DisabledCopOnClass
   class ExampleClass
     # Some description for the `initialize` method

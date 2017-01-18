@@ -18,6 +18,8 @@
 
 ## `class YardMarkdown::Generator`
 
+**See**:
+
 ### `.generate(github_repo:)`
 
 Create docs/readme.md for the current project
@@ -51,6 +53,9 @@ A description for the ExampleClass
 
 ⚠️ **Don't use this class anymore.**
 
+**See**:
+- https://www.example.org/class-see
+
 ### `#initialize(something)`
 
 Some description for the `initialize` method
@@ -66,7 +71,7 @@ Some description for the `initialize` method
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L13)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L14)
 
 ### `#some_instance_method(with_arg = {})`
 
@@ -74,7 +79,7 @@ Some description for the `initialize` method
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L17)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L18)
 
 ### `#something_that_raises`
 
@@ -84,7 +89,7 @@ Some description for the `initialize` method
 - `ArgumentError` if something is wrong
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L21)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L22)
 
 ### `#send_email(opts = {}) end`
 
@@ -99,7 +104,7 @@ Some description for the `initialize` method
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L29)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L30)
 
 ### `#some_deprecated_method`
 
@@ -107,7 +112,7 @@ Some description for the `initialize` method
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L32)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L33)
 
 ### `#method_that_yields`
 
@@ -117,18 +122,20 @@ Some description for the `initialize` method
 - (`a, b, c`) — Gives 3 random numbers to the block
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L36)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L37)
 
 ---
 
 ## `module YardMarkdown::ExampleModule`
+
+**See**:
 
 ### `.method_on_module`
 
 
 
 **See**:
-- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L41)
+- [Source on GitHub](https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb#L42)
 
 ---
 

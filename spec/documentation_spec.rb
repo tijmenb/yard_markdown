@@ -74,8 +74,12 @@ RSpec.describe YardMarkdown do
       expect(@generated_file).to match('https://github.com/tijmenb/yard_markdown/blob/master/lib/yard_markdown/test_classes/example_class.rb')
     end
 
-    it "includes the @see tags" do
+    it "includes the @see tags for methods" do
       expect(@generated_file).to include('https://github.com/tijmenb/yard_markdown')
+    end
+
+    it "includes the @see tags for classes" do
+      expect(@generated_file).to include('https://www.example.org/class-see')
     end
   end
 
