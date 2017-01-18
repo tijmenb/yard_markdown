@@ -21,6 +21,12 @@
 ⚠️ **<%= klass.deprecation_message %>**
 <% end %>
 
+<% if klass.sees.any? %>
+**See**:
+<% klass.sees.each do |tag| %>- <%= tag.name %><%= tag.text %>
+<% end %>
+<% end %>
+
 <% klass.public_methods.each do |meth| %>
 ### `<%= meth.name %>`
 
