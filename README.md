@@ -1,7 +1,3 @@
-⚠️ This gem is experimental and unreleased ⚠️
-
----
-
 [![Inline docs](http://inch-ci.org/github/tijmenb/yard_markdown.svg?branch=master)](http://inch-ci.org/github/tijmenb/yard_markdown)
 [![CircleCI](https://circleci.com/gh/tijmenb/yard_markdown.svg?style=svg)](https://circleci.com/gh/tijmenb/yard_markdown)
 [![Code Climate](https://codeclimate.com/github/tijmenb/yard_markdown/badges/gpa.svg)](https://codeclimate.com/github/tijmenb/yard_markdown)
